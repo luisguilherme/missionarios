@@ -1,0 +1,35 @@
+<h1>New missionario</h1>
+
+<% form_for(@missionario) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </p>
+  <p>
+    <%= f.label :idade %><br />
+    <%= f.text_field :idade %>
+  </p>
+  <p>
+    <%= f.label :endereco %><br />
+    <%= f.text_area :endereco %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :paroquia %><br />
+    <%= f.text_field :paroquia %>
+  </p>
+  <p>
+    <%= f.label :funcao %><br />
+    <%= f.text_field :funcao %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', missionarios_path %>

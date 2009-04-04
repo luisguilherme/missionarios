@@ -1,0 +1,22 @@
+<h1>Listing telefones</h1>
+
+<table>
+  <tr>
+    <th>Missionario</th>
+    <th>Tipo telefone</th>
+  </tr>
+
+<% for telefone in @telefones %>
+  <tr>
+    <td><%=h telefone.missionario %></td>
+    <td><%=h telefone.tipo_telefone %></td>
+    <td><%= link_to 'Show', telefone %></td>
+    <td><%= link_to 'Edit', edit_telefone_path(telefone) %></td>
+    <td><%= link_to 'Destroy', telefone, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New telefone', new_telefone_path %>

@@ -1,0 +1,33 @@
+<p>
+  <b>Nome:</b>
+  <%=h @missionario.nome %>
+</p>
+
+<p>
+  <b>Idade:</b>
+  <%=h @missionario.idade %>
+</p>
+
+<p>
+  <b>Endereco:</b>
+  <%=h @missionario.endereco %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @missionario.email %>
+</p>
+
+<p>
+  <b>Paroquia:</b>
+  <%=h @missionario.paroquia %>
+</p>
+
+<p>
+  <b>Funcao:</b>
+  <%=h @missionario.funcao %>
+</p>
+
+
+<%= link_to 'Edit', edit_missionario_path(@missionario) %> |
+<%= link_to 'Back', missionarios_path %>

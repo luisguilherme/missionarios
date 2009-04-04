@@ -1,0 +1,20 @@
+<h1>Listing tipo_telefones</h1>
+
+<table>
+  <tr>
+    <th>Tipo</th>
+  </tr>
+
+<% for tipo_telefone in @tipo_telefones %>
+  <tr>
+    <td><%=h tipo_telefone.tipo %></td>
+    <td><%= link_to 'Show', tipo_telefone %></td>
+    <td><%= link_to 'Edit', edit_tipo_telefone_path(tipo_telefone) %></td>
+    <td><%= link_to 'Destroy', tipo_telefone, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New tipo_telefone', new_tipo_telefone_path %>

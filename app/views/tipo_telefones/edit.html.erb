@@ -1,0 +1,16 @@
+<h1>Editing tipo_telefone</h1>
+
+<% form_for(@tipo_telefone) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :tipo %><br />
+    <%= f.text_field :tipo %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @tipo_telefone %> |
+<%= link_to 'Back', tipo_telefones_path %>
